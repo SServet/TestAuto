@@ -8,7 +8,7 @@ export default function Footer() {
           <p className="font-bold mr-2">HÄNDLER:</p>
           <p>ANMELDEN</p>
           <span className="inline-block mx-2">|</span>
-          <Link href="/dealer">
+          <Link href="/registration/dealer">
           <p>REGISTRIEREN</p>
           </Link>
           <span className="inline-block mx-2">|</span>

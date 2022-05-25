@@ -41,7 +41,7 @@ export default function Header() {
                   Login
                 </a>
               </Link>
-              <Link href="/user">
+              <Link href="/registration/user">
                 <a className="px-4 ease-in duration-300 hover:bg-theme-yellow hover:fill-black hover:text-black fill-white inline-flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
