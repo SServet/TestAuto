@@ -10,10 +10,10 @@ export default function Registration() {
   ];
   return (
     <div className="bg-theme-gray-3 overflow-hidden">
-      <div className="relative w-10/12 mx-auto flex items-center bg-user-input">
-        <div className="w-1/2 px-10 pt-12 pb-6">
+      <div className="relative w-10/12 md:!w-full mx-auto flex items-center bg-user-input">
+        <div className="w-1/2 lg:w-3/4 md:!w-full lg:mx-auto md:px-6 px-10 pt-12 pb-6">
           <Link href="/">
-            <a className="absolute left-10 top-0 flex items-center text-black text-sm font-semibold opacity-60">
+            <a className="absolute left-10 top-0 md:!left-6 lg:left-32 md:!pl-0 lg:pl-2 flex items-center text-black text-sm font-semibold opacity-60">
               <img className="pt-1 mr-2" src="/images/icons/go-back.png" />
               zurück zur Startseite
             </a>
@@ -62,17 +62,17 @@ export default function Registration() {
               inputType="passoword"
               sublabel="mind. 8 Zeichen, ein Groß- & Kleinbuchstabe und eine Ziffer"
             />
-            <div className="flex justify-between items-end">
-              <div className="w-1/2 mr-2">
+            <div className="flex justify-between items-end md:flex-col">
+              <div className="w-1/2 md:!w-full mr-2 md:mr-0">
                 <label className={`text-sm font-bold inline-block mb-2`}>
-                  Geburtsjahr{" "}
+                  Geburtsjahr
                   <span className="font-sm font-medium">
                     (nur für dich sichtbar)
                   </span>
                 </label>
                 <InputSelect options={option1} placeholder="" regYear />
               </div>
-              <div className="w-1/2 ml-2 h-14 flex text-xs flex-col justify-between pt-2">
+              <div className="w-1/2 md:!w-full ml-2 h-14 flex text-xs flex-col justify-between pt-2">
                 <div className="flex">
                   <input
                     className="w-4 h-4 mr-2"
@@ -99,9 +99,9 @@ export default function Registration() {
                 </div>
               </div>
             </div>
-            <div className="flex items-center mt-8">
-              <img className="w-1/2 mr-2" src="/images/icons/recapcha.png" />
-              <button className="w-1/2 ml-2 inline-block px-20 py-4 border-2 rounded-lg border-black bg-gray-600 text-white text-2xl font-bold ease-linear duration-300 hover:bg-black">
+            <div className="flex md:flex-col items-center mt-8">
+              <img className="w-1/2 md:w-full md:mr-0 mr-2 md:mb-4" src="/images/icons/recapcha.png" />
+              <button className="w-1/2 md:!w-full ml-2 inline-block px-20 py-4 border-2 rounded-lg border-black bg-gray-600 text-white text-2xl font-bold ease-linear duration-300 hover:bg-black">
                 Senden
               </button>
             </div>
@@ -120,7 +120,7 @@ export default function Registration() {
             </Link>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 lg:hidden">
           <img className="w-full h-full" src="/images/reg-car.jpg" />
         </div>
       </div>

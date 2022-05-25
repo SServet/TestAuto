@@ -4,8 +4,8 @@ import Input from "./ui/Input";
 export default function Login() {
   return (
     <div className="bg-theme-gray-3 overflow-hidden">
-      <div className="w-10/12 mx-auto flex items-center bg-user-input">
-        <div className="w-1/2 p-16">
+      <div className="w-10/12 md:w-full mx-auto flex items-center bg-user-input">
+        <div className="w-1/2 lg:w-3/4 md:!w-full lg:mx-auto md:p-10 p-16">
           <h3 className="text-2xl text-gray-500 font-bold">Einloggen</h3>
           <p className="mt-1">Um fortzufahren, musst du eingeloggt sein.</p>
           <div className="mt-6">
@@ -40,7 +40,7 @@ export default function Login() {
             </Link>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 lg:hidden">
             <img className="w-full" src="/images/login-car.jpg" />
         </div>
       </div>

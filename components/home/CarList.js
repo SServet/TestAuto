@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function CarListBrands() {
   return (
-    <div className="bg-theme-gray-3">
-      <div className="w-10/12 mx-auto flex justify-between p-10 pb-20 relative bg-white">
-        <div>
+    <div className="bg-theme-gray-3 lg:px-6 md:!px-0">
+      <div className="w-10/12 lg:w-full mx-auto flex md:flex-wrap justify-between p-10 pb-20 md:p-8 relative bg-white">
+        <div className="md:w-1/2 md:mb-6">
           <h3 className="mb-3 text-xl font-bold text-black">Audi</h3>
           <ul className="text-black opacity-90 leading-7">
             <li>
@@ -27,7 +27,7 @@ export default function CarListBrands() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="md:w-1/2 md:mb-6">
           <h3 className="mb-3 text-xl font-bold text-black">BMW</h3>
           <ul className="text-black opacity-90 leading-7">
             <li>
@@ -50,7 +50,7 @@ export default function CarListBrands() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="md:w-1/2 md:mb-6">
           <h3 className="mb-3 text-xl font-bold text-black">VW</h3>
           <ul className="text-black opacity-90 leading-7">
             <li>
@@ -73,7 +73,7 @@ export default function CarListBrands() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="md:w-1/2 md:mb-6">
           <h3 className="mb-3 text-xl font-bold text-black">Mercedes</h3>
           <ul className="text-black opacity-90 leading-7">
             <li>
@@ -96,7 +96,7 @@ export default function CarListBrands() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="md:w-1/2 md:mb-6">
           <h3 className="mb-3 text-xl font-bold text-black">Weitere Marken</h3>
           <ul className="text-black opacity-90 leading-7">
             <li>

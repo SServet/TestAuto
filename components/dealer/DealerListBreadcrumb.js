@@ -29,8 +29,8 @@ export default function DealerListBreadcrumb() {
 
   return (
     <div className="bg-theme-gray-3">
-    <div className="w-10/12 mx-auto flex shadow-md">
-      <div className="w-1/5 p-8 shadow-md bg-theme-yellow-2">
+    <div className="w-10/12 lg:w-11/12 md:!w-full mx-auto flex md:flex-col-reverse shadow-md">
+      <div className="w-1/5 lg:w-2/5 md:!w-full p-8 shadow-md bg-theme-yellow-2">
         <InputSelect options={option1} placeholder={option1[1].label} />
         <span className="block h-4"></span>
         <InputSelect options={option2} placeholder={option2[1].label} />
@@ -44,7 +44,7 @@ export default function DealerListBreadcrumb() {
           FAHRZEUG SUCHEN
         </button>
       </div>
-      <img className="w-4/5" src="/images/billboard.jpg" />
+      <img className="w-3/5 md:!w-full" src="/images/billboard.jpg" />
     </div>
     </div>
   );

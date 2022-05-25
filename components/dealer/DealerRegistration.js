@@ -25,10 +25,10 @@ export default function DealerRegistration() {
   ];
   return (
     <div className="bg-theme-gray-3 overflow-hidden">
-      <div className="relative w-10/12 mx-auto flex items-center bg-user-input">
-        <div className="w-1/2 px-10 py-16">
+      <div className="relative w-10/12 md:!w-full mx-auto flex items-center bg-user-input">
+        <div className="w-1/2 md:!w-full lg:w-2/3 lg:mx-auto px-10 py-12 lg:pt-16">
           <Link href="/">
-            <a className="absolute left-10 top-0 flex items-center text-black text-sm font-semibold opacity-60">
+            <a className="absolute left-10 top-4 flex items-center text-black text-sm font-semibold opacity-60">
               <img className="pt-1 mr-2" src="/images/icons/go-back.png" />
               zurück zur Startseite
             </a>
@@ -37,7 +37,7 @@ export default function DealerRegistration() {
             Als Händler registrieren
           </h3>
           <div>
-            <div className="w-1/2 ml-auto flex justify-between mt-6">
+            <div className="w-1/2 md:w-2/3 md:pl-7 ml-auto flex justify-between mt-6">
               <p className="text-black font-bold">Firma</p>
               <p className="text-sm">*=Pflichtfelder</p>
             </div>
@@ -99,7 +99,7 @@ export default function DealerRegistration() {
                 <label className="w-5/12 text-right pr-4 text-sm font-bold inline-block">
                   Anrede
                 </label>
-                <div className="w-3/12">
+                <div className="w-3/12 md:w-7/12">
                   <InputSelect options={option3} placeholder={option3[0].value} regYear />
                 </div>
               </div>
@@ -125,7 +125,7 @@ export default function DealerRegistration() {
                 <label className="w-5/12 text-right pr-4 text-sm font-bold inline-block">
                   * Ländervorwahl
                 </label>
-                <div className="w-3/12">
+                <div className="w-3/12 md:w-7/12">
                   <InputSelect options={option4} placeholder={option4[0].value} regYear />
                 </div>
               </div>
@@ -146,7 +146,7 @@ export default function DealerRegistration() {
             </div>
 
             <div className="flex justify-between items-end">
-              <div className="w-7/12 ml-auto mt-3 h-14 flex text-xs flex-col justify-between pt-2">
+              <div className="w-7/12 ml-auto mt-3 h-14 flex text-xs flex-col md:w-full justify-between pt-2">
                 <div className="flex">
                   <input
                     className="w-4 h-4 mr-2"
@@ -173,16 +173,16 @@ export default function DealerRegistration() {
                 </div>
               </div>
             </div>
-            <div className="flex items-center mt-8">
-              <img className="w-1/2 mr-2" src="/images/icons/recapcha.png" />
-              <button className="w-1/2 ml-2 inline-block px-20 py-4 border-2 rounded-lg border-black bg-gray-600 text-white text-2xl font-bold ease-linear duration-300 hover:bg-black">
+            <div className="flex items-center mt-8 md:flex-col">
+              <img className="w-1/2 md:w-full md:mr-0 md:mb-4 mr-2" src="/images/icons/recapcha.png" />
+              <button className="w-1/2 md:w-full md:ml-0 ml-2 inline-block px-20 py-4 border-2 rounded-lg border-black bg-gray-600 text-white text-2xl font-bold ease-linear duration-300 hover:bg-black">
                 Senden
               </button>
             </div>
           </div>
         </div>
-        <div className="w-1/2">
-          <img className="w-full h-full" src="/images/reg-car.jpg" />
+        <div className="w-1/2 lg:hidden">
+          <img className="w-full h-full" src="/images/dealer-reg-car.png" />
         </div>
       </div>
     </div>

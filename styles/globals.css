@@ -51,10 +51,10 @@ input {
   top: 20px;
   z-index: 2;
 }
-.swiper:before{
+.swiper:before {
   right: 0;
 }
-.swiper:after{
+.swiper:after {
   left: 0;
 }
 
@@ -81,9 +81,24 @@ input {
   font-size: 22px;
 }
 
-.swiper-button-prev, .swiper-rtl .swiper-button-next{
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
   left: 2px;
 }
-.swiper-button-next, .swiper-rtl .swiper-button-prev{
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
   right: 2px;
+}
+
+@media (max-width: 1366px) {
+  .r-select {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-content {
+    background-image: url(/images/hero.jpg);
+    background-size: cover;
+    background-position: left bottom;
+  }
 }

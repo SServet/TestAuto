@@ -37,6 +37,7 @@ export default function InputSelect({
       styles={styleType == "row" ? "" : style2}
       options={options}
       placeholder={<div className="text-gray-400">{placeholder}</div>}
+      classNamePrefix='r-select s-1'
     />
   ) : (
     <Select
@@ -44,6 +45,7 @@ export default function InputSelect({
       styles={styleType == "row" ? "" : style}
       options={options}
       placeholder={<div className="text-gray-400">{placeholder}</div>}
+      classNamePrefix='r-select s-1'
     />
   );
   return renderSelect;

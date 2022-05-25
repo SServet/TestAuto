@@ -22,11 +22,11 @@ export default function Hero() {
     { value: "alle marken3", label: "Alle Marken" },
   ];
   return (
-    <div className="bg-theme-gray-3">
-      <div className="w-10/12 mx-auto relative">
-        <img className="w-full" src="/images/hero.jpg" />
-        <div className="w-2/3 absolute right-0 bottom-0 px-14">
-          <div className="text-4xl font-bold px-2 mb-4">
+    <div className="bg-theme-gray-3 px-0 md:!px-0 lg:px-6">
+      <div className="w-10/12 lg:w-full md:!w-full mx-auto relative">
+        <img className="w-full lg:h-72 md:hidden" src="/images/hero.jpg" />
+        <div className="hero-content w-2/3 md:!w-full lg:w-10/12 absolute md:relative right-0 bottom-0 px-14 md:p-4 hero-content">
+          <div className="text-4xl 2xl:text-2xl lg:text-lg font-bold px-2 mb-4">
             <h2 className="text-theme-yellow-2">EINFACH</h2>
             <h2 className="text-white">
               GIGANTISCH
@@ -34,51 +34,51 @@ export default function Hero() {
             </h2>
           </div>
 
-          <div className="flex justify-between text-center uppercase text-white">
-            <div className="px-2">
+          <div className="flex justify-between md:justify-start text-center md:flex-wrap 2xl:text-xs uppercase text-white">
+            <div className="px-2 2xl:w-24">
               <img className="mx-auto" src="/images/cars/limo.png" />
               <p>limousine</p>
             </div>
-            <div>
-              <img className="mx-auto" src="/images/cars/suv.png" />
+            <div className="2xl:w-24">
+              <img className="mx-auto 2xl:w-16" src="/images/cars/suv.png" />
               <p>suv gelÄndewagen</p>
             </div>
-            <div>
-              <img className="mx-auto" src="/images/cars/kombi.png" />
+            <div className="2xl:w-24">
+              <img className="mx-auto 2xl:w-16" src="/images/cars/kombi.png" />
               <p>kombi family van</p>
             </div>
-            <div>
-              <img className="mx-auto" src="/images/cars/sports.png" />
+            <div className="2xl:w-24">
+              <img className="mx-auto 2xl:w-16" src="/images/cars/sports.png" />
               <p>sportwagen coupË</p>
             </div>
-            <div>
-              <img className="mx-auto" src="/images/cars/cabrio.png" />
+            <div className="2xl:w-24">
+              <img className="mx-auto 2xl:w-16" src="/images/cars/cabrio.png" />
               <p>carbio roadster</p>
             </div>
-            <div>
-              <img className="mx-auto" src="/images/cars/klein.png" />
+            <div className="2xl:w-24">
+              <img className="mx-auto 2xl:w-16" src="/images/cars/klein.png" />
               <p>kleinbus</p>
             </div>
           </div>
-          <div className="flex mt-2">
-            <div className="w-1/4 pl-2">
+          <div className="flex mt-2 md:flex-wrap">
+            <div className="w-1/4 md:w-1/2 pl-4 md:pl-0">
               <InputSelect options={option1} placeholder={option1[1].label} />
             </div>
-            <div className="w-1/4 pl-4">
+            <div className="w-1/4 md:w-1/2 pl-2 md:pl-2 md:mb-2">
               <InputSelect options={option2} placeholder={option2[1].label} />
             </div>
-            <div className="w-1/4 pl-4">
+            <div className="w-1/4 md:w-1/2 pl-2 md:pl-0">
               <InputSelect options={option3} placeholder={option3[1].label} />
             </div>
-            <div className="w-1/4 pl-4">
+            <div className="w-1/4 md:w-1/2 pl-2 md:pl-2">
               <InputSelect options={option4} placeholder={option4[1].label} />
             </div>
           </div>
-          <div className="flex items-center mt-6 mb-2 pl-2 justify-between">
-              <button className="w-1/4 text-left text-white underline text-xl">Erweiterte Suche</button>
-              <button className="w-1/4 pl-4 text-center text-white underline text-xl">Filter zurücksetzen</button>
-              <div className="w-4"></div>
-              <button className="w-1/2 text-center py-3 border-black border-2 rounded-lg font-bold text-xl text-black bg-theme-yellow">Suchen</button>
+          <div className="flex md:flex-wrap items-center mt-6 lg:mt-2 mb-2 pl-2 justify-between text-xl lg:text-sm 2xl:text-lg">
+              <button className="w-1/4 md:w-1/2 lg:w-auto text-left text-white underline">Erweiterte Suche</button>
+              <button className="w-1/4 md:w-1/2 lg:w-auto pl-4 text-center text-white underline">Filter zurücksetzen</button>
+              <div className="w-4 2xl:w-0"></div>
+              <button className="w-1/2 md:!w-8/12 md:mx-auto md:mt-3 lg:w-auto 2xl:w-1/3  text-center py-3 lg:py-2 border-black border-2 rounded-lg font-bold text-black bg-theme-yellow">Suchen</button>
           </div>
         </div>
       </div>
