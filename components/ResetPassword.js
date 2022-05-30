@@ -3,12 +3,12 @@ import Input from "./ui/Input";
 
 export default function ResetPassword() {
   return (
-    <div className="bg-theme-gray-3 overflow-hidden">
-      <div className="relative w-10/12 md:!w-full mx-auto flex items-center bg-user-input">
-        <div className="w-1/2 md:!w-full lg:w-3/4 lg:px-10 p-16">
+    <div className="bg-theme-gray-3 overflow-hidden lg:px-6 md:!px-0">
+      <div className="relative max-w-ag-container w-10/12 lg:w-full mx-auto flex lg:flex-col items-center bg-user-input">
+        <div className="w-1/2 md:!w-full lg:w-full lg:px-10 p-16 lg:pb-6">
           <Link href="/">
-            <a className="absolute left-16 lg:left-10 top-10 lg:top-4 flex items-center text-black text-sm font-semibold opacity-60">
-              <img className="pt-1 mr-2" src="/images/icons/go-back.png" />
+            <a className="absolute left-16 lg:left-10 top-6 lg:top-4 flex items-center text-black text-sm font-semibold opacity-60">
+              <img className="w-6 pt-1 mr-2" src="/images/icons/go-back.png" />
               zurück zur Startseite
             </a>
           </Link>
@@ -40,7 +40,7 @@ export default function ResetPassword() {
             </Link>
           </div>
         </div>
-        <div className="w-1/2 lg:hidden">
+        <div className="w-1/2 lg:w-full">
           <img className="w-full h-full" src="/images/reset-password-car.jpg" />
         </div>
       </div>

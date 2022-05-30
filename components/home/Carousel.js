@@ -38,15 +38,15 @@ export default function CarCarousel({ children }) {
               spaceBetween: 20,
             },
             640: {
-              slidesPerView: 1,
+              slidesPerView: 2,
               spaceBetween: 20,
             },
             767: {
-              slidesPerView: 1,
+              slidesPerView: 2,
               spaceBetween: 20,
             },
             840: {
-              slidesPerView: 2,
+              slidesPerView: 3,
               spaceBetween: 20,
             },
             1024: {
@@ -59,22 +59,6 @@ export default function CarCarousel({ children }) {
             },
             1520: {
               slidesPerView: 4,
-              spaceBetween: 20,
-            },
-            1700: {
-              slidesPerView: 6,
-              spaceBetween: 20,
-            },
-            2060: {
-              slidesPerView: 6,
-              spaceBetween: 20,
-            },
-            2460: {
-              slidesPerView: 6,
-              spaceBetween: 20,
-            },
-            2560: {
-              slidesPerView: 6,
               spaceBetween: 20,
             },
           }}

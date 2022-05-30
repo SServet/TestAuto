@@ -23,6 +23,9 @@ module.exports = {
         49: "49%",
         55: "55%",
       },
+      maxWidth: {
+        'ag-container': '1140px'
+      },
       borderColor: {
         "theme-gray": "#808080",
       },

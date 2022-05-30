@@ -1,18 +1,18 @@
 import Head from 'next/head';
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
-import DealerRegistration from '../../components/dealer/DealerRegistration';
+import Login from '../../components/Login';
 
-export default function UserRegister() {
+export default function LoginPage() {
   return (
     <div>
       <Head>
-        <title>Auto Gigant - Dealer Registration</title>
+        <title>Auto Gigant - Log in</title>
         <meta name="description" content="Auto Gigant" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <DealerRegistration />
+      <Login />
       <Footer />
     </div>
   )

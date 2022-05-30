@@ -17,7 +17,7 @@ const style2 = {
     ...base,
     boxShadow: "none",
     border: "1px solid slate",
-    padding: '6px'
+    padding: '2px'
   }),
   option: (styles, state) => ({
     ...styles,

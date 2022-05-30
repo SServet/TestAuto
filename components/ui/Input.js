@@ -4,9 +4,9 @@ export default function Input({ label, inputType, sublabel }) {
   const [inType, setInType] = useState(inputType);
 
   return (
-    <div className="mb-4">
-      <label className={`text-sm font-bold inline-block ${sublabel ? '' : 'mb-2'}`}>{label}</label>
-      {sublabel ? <p className="text-xs mb-2">{sublabel}</p>: null}
+    <div className="mb-3">
+      <label className={`text-sm font-bold inline-block ${sublabel ? '' : 'mb-1'}`}>{label}</label>
+      {sublabel ? <p className="text-xs mb-1">{sublabel}</p>: null}
       <div className="relative">
         <input
           className="w-full border rounded text-md p-3 border-slate-300"

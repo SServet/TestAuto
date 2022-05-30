@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-black shadow-1 relative z-10">
-      <div className="w-10/12 mx-auto flex justify-between items-end py-6 md:py-4 md:pb-2 md:items-start">
+    <header className="bg-black shadow-1 relative z-10 lg:px-6">
+      <div className="max-w-ag-container w-10/12 lg:w-full mx-auto flex justify-between items-end py-6 md:py-4 md:pb-2 md:items-start">
         <Link href="/">
           <img
             className="w-60 md:w-32 cursor-pointer"
@@ -12,7 +12,7 @@ export default function Header() {
           />
         </Link>
         <div className="flex items-center md:mt-2 md:w-full md:justify-between">
-          <div className="flex mr-20 md:ml-6 lg:mr-0">
+          <div className="flex mr-10 md:ml-6 lg:mr-0">
             <button className="w-8 md:w-6 mr-4">
               <img src="/images/icons/header-search.png" />
             </button>
@@ -23,12 +23,12 @@ export default function Header() {
               <img src="/images/icons/header-favourite.png" />
             </button>
           </div>
-          <div className="w-60 md:w-6 relative group flex items-center md:justify-end md:flex-1 h-14 rounded-md hover:bg-theme-gray-2 px-2 pb-2 md:pb-0">
+          <div className="w-60 lg:w-46 md:w-6 relative group flex items-center md:justify-end md:flex-1 h-14 rounded-md hover:bg-theme-gray-2 px-2 pb-2 md:pb-0">
             <button className="w-full md:w-6 inline-flex justify-end">
               <img src="/images/icons/header-user.png" />
             </button>
-            <div className="absolute w-60 z-10 uppercase invisible opacity-0 py-10 group-hover:visible group-hover:opacity-100 flex flex-col top-full overflow-hidden font-medium -mt-2 right-0 text-white rounded-md bg-theme-gray-2 ease-in duration-200">
-              <Link href="/login">
+            <div className="absolute z-10 uppercase invisible opacity-0 py-10 group-hover:visible group-hover:opacity-100 flex flex-col top-full overflow-hidden font-medium -mt-2 right-0 text-white rounded-md bg-theme-gray-2 ease-in duration-200">
+              <Link href="/">
                 <a className="px-4 ease-in duration-300 hover:bg-theme-yellow hover:fill-black hover:text-black fill-white inline-flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

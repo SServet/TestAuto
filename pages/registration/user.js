@@ -7,7 +7,7 @@ export default function UserRegister() {
   return (
     <div>
       <Head>
-        <title>Auto Gigant - Reset Password</title>
+        <title>Auto Gigant - User Registration</title>
         <meta name="description" content="Auto Gigant" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

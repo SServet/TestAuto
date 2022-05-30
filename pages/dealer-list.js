@@ -8,7 +8,7 @@ export default function DealerList(){
     return (
         <div>
           <Head>
-            <title>Auto Gigant</title>
+            <title>Auto Gigant - Dealer List</title>
             <meta name="description" content="Auto Gigant" />
             <link rel="icon" href="/favicon.ico" />
           </Head>

@@ -1,9 +1,24 @@
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
-export default function CarListBrands() {
+export default function CarListBrands() { const [showGoTop, setShowGoTop] = useState(false);
+
+  const handleVisibleButton = () => {
+    setShowGoTop(window.pageYOffset > 50);
+  };
+
+  const handleScrollUp = () => {
+    window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleVisibleButton);
+  }, []);
+
+
   return (
     <div className="bg-theme-gray-3 lg:px-6 md:!px-0">
-      <div className="w-10/12 lg:w-full mx-auto flex md:flex-wrap justify-between p-10 pb-20 md:p-8 relative bg-white">
+      <div className="w-10/12 max-w-ag-container lg:w-full mx-auto flex md:flex-wrap justify-between p-10 pb-20 md:p-8 relative bg-white">
         <div className="md:w-1/2 md:mb-6">
           <h3 className="mb-3 text-xl font-bold text-black">Audi</h3>
           <ul className="text-black opacity-90 leading-7">
@@ -119,7 +134,7 @@ export default function CarListBrands() {
             </li>
           </ul>
         </div>
-        <button className="absolute flex items-center right-10 bottom-6 font-bold">
+        <button onClick={handleScrollUp} className="absolute flex items-center right-10 bottom-6 font-bold">
           Nach Oben
           <img className="ml-4" src="/images/icons/top-btn.png" />
         </button>

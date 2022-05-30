@@ -23,7 +23,7 @@ export default function Hero() {
   ];
   return (
     <div className="bg-theme-gray-3 px-0 md:!px-0 lg:px-6">
-      <div className="w-10/12 lg:w-full md:!w-full mx-auto relative">
+      <div className="w-10/12 max-w-ag-container lg:w-full md:!w-full mx-auto relative">
         <img className="w-full lg:h-72 md:hidden" src="/images/hero.jpg" />
         <div className="hero-content w-2/3 md:!w-full lg:w-10/12 absolute md:relative right-0 bottom-0 px-14 md:p-4 hero-content">
           <div className="text-4xl 2xl:text-2xl lg:text-lg font-bold px-2 mb-4">
