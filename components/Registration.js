@@ -1,8 +1,11 @@
+import { useState } from "react";
 import Link from "next/link";
 import Input from "./ui/Input";
 import InputSelect from "./ui/InputSelect";
 
 export default function Registration() {
+  const [gender, setGender] = useState('');
+
   const option1 = [
     { value: "alle marken", label: "Alle Marken" },
     { value: "alle", label: "Alle Marken" },
@@ -13,34 +16,36 @@ export default function Registration() {
       <div className="relative w-10/12 lg:w-full max-w-ag-container md:!w-full mx-auto flex lg:flex-col items-center bg-user-input">
         <div className="w-1/2 lg:w-3/4 md:!w-full lg:mx-auto md:px-6 px-10 pt-8 lg:py-12 pb-2">
           <Link href="/">
-            <a className="absolute left-10 top-2 md:!left-6 lg:left-32 md:!pl-0 lg:pl-2 flex items-center text-black text-sm font-semibold opacity-60">
+            <a className="absolute left-10 top-3 md:!left-6 lg:left-32 md:!pl-0 lg:pl-2 flex items-center text-black text-sm font-semibold opacity-60">
               <img className="w-6 pt-1 mr-2" src="/images/icons/go-back.png" />
               zurück zur Startseite
             </a>
           </Link>
-          <h3 className="text-2xl text-gray-500 font-bold">
+          <h3 className="text-2xl text-gray-500 font-bold pt-4">
             Neu Registrienren
           </h3>
           <div className="flex justify-between items-center">
             <p className="">oder als bestehender User einloggen</p>
             <div className="flex">
-              <div className="flex items-center mr-10">
+              <div onClick={() => gender === 'male' ? setGender('') : setGender('male')} className="flex items-center mr-10">
                 <input
-                  className="w-4 h-4 mr-2"
+                  className="w-4 h-4 mr-2 appearance-none border border-slate-300 bg-white blackChecked"
                   type="checkbox"
                   id="man"
                   name="man"
                   value="man"
+                  checked={gender === 'male' ? true : false}
                 />
                 <label htmlFor="man">Mann</label>
               </div>
-              <div className="flex items-center">
+              <div onClick={() => gender === 'female' ? setGender('') : setGender('female')} className="flex items-center">
                 <input
-                  className="w-4 h-4 mr-2"
+                  className="w-4 h-4 mr-2 appearance-none border border-slate-300 bg-white blackChecked"
                   type="checkbox"
                   id="woman"
                   name="woman"
                   value="woman"
+                  checked={gender === 'female' ? true : false}
                 />
                 <label htmlFor="woman">Frau</label>
               </div>
@@ -59,7 +64,7 @@ export default function Registration() {
             <Input label="E-Mail-Adresse" inputType="email" />
             <Input
               label="Passwort"
-              inputType="passoword"
+              inputType="password"
               sublabel="mind. 8 Zeichen, ein Groß- & Kleinbuchstabe und eine Ziffer"
             />
             <div className="flex justify-between items-end md:flex-col">
@@ -126,10 +131,10 @@ export default function Registration() {
         <div className="w-1/2 relative lg:w-3/4 md:!w-full lg:mx-auto md:px-6 lg:mb-12">
           <img className="w-full h-full" src="/images/reg-car.jpg" />
           <div className="absolute text-white font-bold  w-full items-center bottom-8">
-            <div className="flex flex-col w-72 mx-auto">
+            <div className="flex flex-col w-72 mx-auto text-15">
                Sind Sie Händler?
             <Link href="/registration/dealer">
-              <a className="w-full md:w-60 bg-theme-yellow-2 text-black text-center p-4 rounded-lg border-2 border-black">Als Händler registrieren</a>
+              <a className="w-full md:w-60 bg-theme-yellow-2 text-xl text-black text-center p-4 rounded-lg border-2 border-black">Als Händler registrieren</a>
             </Link>
             </div>
            

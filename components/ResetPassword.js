@@ -15,7 +15,7 @@ export default function ResetPassword() {
           <h3 className="text-2xl text-gray-500 font-bold">
             Passwort vergessen
           </h3>
-          <p className="mt-1">Bitte gib hier deine E-Mail-Adresse ein.</p>
+          <p className="mt-1">Bitte gib hier deine E-Mail-Adresse ein,</p>
           <p>mit der du bei AUTOGIGANT registriert bist.</p>
           <p>
             An diese E-Mail-Adresse senden wir den Link zum Ändern des
@@ -41,7 +41,7 @@ export default function ResetPassword() {
           </div>
         </div>
         <div className="w-1/2 lg:w-full">
-          <img className="w-full h-full" src="/images/reset-password-car.jpg" />
+          <img className="w-full h-full" src="/images/reset-password.png" />
         </div>
       </div>
     </div>

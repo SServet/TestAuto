@@ -6,7 +6,7 @@ import CarCarousel from "./Carousel";
 export default function HomeCars() {
   return (
     <div className="bg-theme-gray-3 lg:px-6 md:!px-0">
-      <div className="relative max-w-ag-container w-10/12 lg:w-full mx-auto px-12 py-8 bg-user-input md:p-6">
+      <div className="relative max-w-ag-container w-10/12 lg:w-full mx-auto px-12 py-2 bg-user-input md:p-6">
         <CarCarousel>
           <SwiperSlide>
             <CarCard

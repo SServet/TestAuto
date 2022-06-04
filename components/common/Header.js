@@ -12,7 +12,7 @@ export default function Header() {
           />
         </Link>
         <div className="flex items-center md:mt-2 md:w-full md:justify-between">
-          <div className="flex mr-10 md:ml-6 lg:mr-0">
+          <div className="flex md:ml-6 lg:mr-0">
             <button className="w-8 md:w-6 mr-4">
               <img src="/images/icons/header-search.png" />
             </button>
@@ -27,8 +27,8 @@ export default function Header() {
             <button className="w-full md:w-6 inline-flex justify-end">
               <img src="/images/icons/header-user.png" />
             </button>
-            <div className="absolute z-10 uppercase invisible opacity-0 py-10 group-hover:visible group-hover:opacity-100 flex flex-col top-full overflow-hidden font-medium -mt-2 right-0 text-white rounded-md bg-theme-gray-2 ease-in duration-200">
-              <Link href="/">
+            <div className="w-full absolute z-10 uppercase invisible opacity-0 py-10 group-hover:visible group-hover:opacity-100 flex flex-col top-full overflow-hidden font-medium -mt-2 right-0 text-white rounded-md bg-theme-gray-2 ease-linear duration-150">
+              <Link href="/login">
                 <a className="px-4 ease-in duration-300 hover:bg-theme-yellow hover:fill-black hover:text-black fill-white inline-flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ export default function Header() {
                   Login
                 </a>
               </Link>
-              <Link href="/registration/user">
+              <Link href="/">
                 <a className="px-4 ease-in duration-300 hover:bg-theme-yellow hover:fill-black hover:text-black fill-white inline-flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ export default function Header() {
                   Dashboard
                 </a>
               </Link>
-              <Link href="/dealer-list">
+              <Link href="/">
                 <a className="px-4 ease-in duration-300 hover:bg-theme-yellow hover:fill-black hover:text-black fill-white inline-flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

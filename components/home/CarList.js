@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-export default function CarListBrands() { const [showGoTop, setShowGoTop] = useState(false);
+export default function CarListBrands() { 
+  const [showGoTop, setShowGoTop] = useState(false);
 
   const handleVisibleButton = () => {
     setShowGoTop(window.pageYOffset > 50);
@@ -17,10 +18,15 @@ export default function CarListBrands() { const [showGoTop, setShowGoTop] = useS
 
 
   return (
-    <div className="bg-theme-gray-3 lg:px-6 md:!px-0">
+    <div className="bg-theme-gray-3 md:bg-white lg:px-6 md:!px-0">
+      <div className="w-10/12 lg:w-full max-w-ag-container mx-auto pt-10 relative bg-white text-center text-theme-black">
+        <h2 className='text-2xl font-bold md:text-xl'>Gebrauchtwagen gesucht?</h2>
+        <p className='text-xl font-thin md:text-15'>Entdecke hier das Angebot von AUTOGIGANT.</p>
+      </div>
+
       <div className="w-10/12 max-w-ag-container lg:w-full mx-auto flex md:flex-wrap justify-between p-10 pb-20 md:p-8 relative bg-white">
         <div className="md:w-1/2 md:mb-6">
-          <h3 className="mb-3 text-xl font-bold text-black">Audi</h3>
+          <h3 className="mb-6 text-xl font-bold text-black">Audi</h3>
           <ul className="text-black opacity-90 leading-7">
             <li>
               <Link href="/">Audi A1</Link>
@@ -43,7 +49,7 @@ export default function CarListBrands() { const [showGoTop, setShowGoTop] = useS
           </ul>
         </div>
         <div className="md:w-1/2 md:mb-6">
-          <h3 className="mb-3 text-xl font-bold text-black">BMW</h3>
+          <h3 className="mb-6 text-xl font-bold text-black">BMW</h3>
           <ul className="text-black opacity-90 leading-7">
             <li>
               <Link href="/">BMW 1er</Link>
@@ -66,7 +72,7 @@ export default function CarListBrands() { const [showGoTop, setShowGoTop] = useS
           </ul>
         </div>
         <div className="md:w-1/2 md:mb-6">
-          <h3 className="mb-3 text-xl font-bold text-black">VW</h3>
+          <h3 className="mb-6 text-xl font-bold text-black">VW</h3>
           <ul className="text-black opacity-90 leading-7">
             <li>
               <Link href="/">VW Caddy</Link>
@@ -89,7 +95,7 @@ export default function CarListBrands() { const [showGoTop, setShowGoTop] = useS
           </ul>
         </div>
         <div className="md:w-1/2 md:mb-6">
-          <h3 className="mb-3 text-xl font-bold text-black">Mercedes</h3>
+          <h3 className="mb-6 text-xl font-bold text-black">Mercedes</h3>
           <ul className="text-black opacity-90 leading-7">
             <li>
               <Link href="/">Mercedes A-Klasse</Link>
@@ -112,7 +118,7 @@ export default function CarListBrands() { const [showGoTop, setShowGoTop] = useS
           </ul>
         </div>
         <div className="md:w-1/2 md:mb-6">
-          <h3 className="mb-3 text-xl font-bold text-black">Weitere Marken</h3>
+          <h3 className="mb-6 text-xl font-bold text-black">Weitere Marken</h3>
           <ul className="text-black opacity-90 leading-7">
             <li>
               <Link href="/">Ford</Link>

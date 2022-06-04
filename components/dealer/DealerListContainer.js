@@ -12,9 +12,9 @@ export default function DealerListContainer() {
     <div className="bg-theme-gray-3">
       <div className="lg:px-6 md:!px-0">
         <div className="w-10/12 lg:w-full max-w-ag-container mx-auto lg:px-6 lg:pt-0 px-20 bg-white pt-6">
-          <div className="flex md:flex-wrap justify-between items-center pb-6 py-6">
-            <div className="w-4/5 flex md:w-full md:flex-wrap lg:text-sm items-center">
-              <div className="md:w-1/2 mr-10 lg:mr-4 md:!mr-0 lg:flex-1">
+          <div className="flex md:w-full md:flex-wrap justify-between items-center pb-6 py-6">
+            <div className="w-4/5 md:w-full flex md:flex-wrap lg:text-sm items-center">
+              <div className="md:!w-1/2 mr-10 lg:mr-4 md:!mr-0 lg:flex-1">
                 <h4 className="text-black font-bold">Autohändler:</h4>
                 <p className="text-black">123456 Ergebnisse</p>
               </div>
@@ -27,7 +27,7 @@ export default function DealerListContainer() {
                   <img src="/images/icons/dealer-search.png" />
                 </button>
               </div>
-              <div className="w-1/4 mr-4 md:mr-2 md:flex-1 md:mt-4 md:w-1/2">
+              <div className="w-1/4 mr-4 md:mr-2 md:mt-4 md:w-1/2">
                 <InputSelect
                   styleType="row"
                   options={option}

@@ -20,7 +20,7 @@ export default function Footer() {
           <span className="inline-block mx-2">|</span>
           <p>WERBUNG AUF AUTOGIGANT</p>
         </div>
-        <div className="flex justify-between md:flex-col lg:justify-around items-end xl:items-center px-6 py-4 md:py-8 bg-black">
+        <div className="flex justify-between md:flex-col lg:justify-around items-center xl:items-center px-6 py-4 md:py-8 bg-black">
           <div className="flex w-1/2 lg:w-auto md:mr-auto items-end lg:flex-col xl:items-center lg:items-start">
             <Link href="/">
               <div>
@@ -31,7 +31,7 @@ export default function Footer() {
                 <p className="text-xs font-bold text-white mt-2">A COMPANY OF THE GIGANT GROUP</p>
               </div>
             </Link>
-            <div className="flex flex-col justify-center lg:border-0 border-l border-white lg:mr-auto lg:pt-4 ml-2 pl-2 text-white opacity-80 text-sm lg:ml-0 lg:pl-0">
+            <div className="flex flex-col justify-center lg:border-0 border-l border-footer-border lg:mr-auto lg:pt-4 ml-2 pl-2 text-white opacity-80 text-sm lg:ml-0 lg:pl-0">
               <div className="mb-4 xl:mb-2">
                 <p>UBER UNS | PRESSE | SITEMAP</p>
                 <p>AGB | DSGVO | IMPRESSUM | KONTAKT</p>
@@ -56,16 +56,16 @@ export default function Footer() {
             <div className="md:items-start md:mt-8 mt-1">
               <img src="/images/icons/slogan.png" />
               <div className="flex mt-4">
-                <button className="w-8 xl:w-8 rounded-full overflow-hidden opacity-60 hover:opacity-100 ease-linear duration-300">
+                <button className="w-8 xl:w-8 rounded-full overflow-hidden opacity-40 hover:opacity-100 ease-linear duration-300">
                   <img src="/images/icons/facebook.png" />
                 </button>
-                <button className="w-8 xl:w-8 ml-3 rounded-full overflow-hidden opacity-60 hover:opacity-100 ease-linear duration-300">
+                <button className="w-8 xl:w-8 ml-3 rounded-full overflow-hidden opacity-40 hover:opacity-100 ease-linear duration-300">
                   <img src="/images/icons/instagram.png" />
                 </button>
-                <button className="w-8 xl:w-8 ml-3 rounded-full overflow-hidden opacity-60 hover:opacity-100 ease-linear duration-300">
+                <button className="w-8 xl:w-8 ml-3 rounded-full overflow-hidden opacity-40 hover:opacity-100 ease-linear duration-300">
                   <img src="/images/icons/youtube.png" />
                 </button>
-                <button className="w-8 xl:w-8 ml-3 rounded-full overflow-hidden opacity-60 hover:opacity-100 ease-linear duration-300">
+                <button className="w-8 xl:w-8 ml-3 rounded-full overflow-hidden opacity-40 hover:opacity-100 ease-linear duration-300">
                   <img src="/images/icons/tiktok.png" />
                 </button>
               </div>

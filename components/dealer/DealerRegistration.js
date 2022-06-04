@@ -207,8 +207,8 @@ export default function DealerRegistration() {
                 className="w-1/2 md:w-full md:mr-0 md:mb-4 mr-2"
                 src="/images/icons/recapcha.png"
               />
-              <button className="w-1/2 md:w-full md:ml-0 ml-2 inline-block px-20 py-4 border-2 rounded-lg border-black bg-gray-600 text-white text-2xl font-bold ease-linear duration-300 hover:bg-black">
-                Senden
+              <button className="w-1/2 md:w-full md:ml-0 ml-2 inline-block px-2 py-4 border-2 rounded-lg border-black bg-gray-600 text-white text-2xl font-bold ease-linear duration-300 hover:bg-black">
+                Neu registrieren
               </button>
             </div>
           </div>
@@ -218,8 +218,8 @@ export default function DealerRegistration() {
           <div className="absolute text-white top-36 left-16 md:left-10">
             <div className="flex flex-col w-96 md:w-64 mx-auto">
               <Link href="/login/user">
-                <a className="w-72 md:w-60 bg-theme-yellow-2 font-bold mb-2 text-black text-center p-4 rounded-lg border-2 border-black">
-                  Als Händler einlogen
+                <a className="w-72 md:w-60 bg-theme-yellow-2 text-xl font-bold mb-2 text-black text-center p-4 rounded-lg border-2 border-black">
+                Als Händler einlogen
                 </a>
               </Link>
               Haben Sie Fragen? Wir helfen Ihnen gerne weiter.
