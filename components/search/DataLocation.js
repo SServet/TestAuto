@@ -21,10 +21,15 @@ import {
   leis2,
   von2,
   getri,
+  von4,
+  bis4
 } from "./selectOptions";
 
 export default function DataLocation() {
   const [expanded, setExpanded] = useState(false);
+  const [brandName, setBrandName] = useState(null);
+  const [modelName, setModelName] = useState(null);
+
 
   return (
     <div className="text-xs border-b-2">
@@ -48,6 +53,7 @@ export default function DataLocation() {
             <InputSelect
               options={marke1}
               placeholder={marke1[1].label}
+              onChange={(e) => setBrandName(e.value)}
               regYear
             />
           </div>
@@ -57,6 +63,7 @@ export default function DataLocation() {
             <InputSelect
               options={marke2}
               placeholder={marke1[1].label}
+              onChange={(e) => setModelName(e.value)}
               regYear
             />
           </div>
@@ -232,35 +239,18 @@ export default function DataLocation() {
             </div>
           </div>
           <div className="w-5 md:hidden"></div>
-          <div className="flex flex-1">
-            <div className="">
-              <p className="mb-1 text-15">Leistung</p>
+          <div className="flex flex-1 items-end">
+            <div className="w-1/2">
+              <p className="mb-1 text-15">Sitzplätze</p>
               <InputSelect
-                options={leis2}
-                placeholder={leis2[1].label}
+                options={von4}
+                placeholder={von4? von4[1].label : ''}
                 regYear
                 classes="pr-4"
               />
             </div>
-            <div className="w-5 md:hidden"></div>
-            <div className="flex items-end flex-1">
-              <div className="w-1/2">
-                <p className="mb-1 text-15">von</p>
-                <InputSelect
-                  options={von2}
-                  placeholder={von2[1].label}
-                  regYear
-                  classes="pr-4"
-                />
-              </div>
-              <div className="w-1/2">
-                <p className="mb-1 text-15">bis</p>
-                <InputSelect
-                  options={bis3}
-                  placeholder={bis3[1].label}
-                  regYear
-                />
-              </div>
+            <div className="w-1/2">
+              <InputSelect options={bis4} placeholder={bis4[1].label} regYear />
             </div>
           </div>
         </div>

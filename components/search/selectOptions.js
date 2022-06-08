@@ -1,12 +1,12 @@
 export const marke1 = [
   { value: "alle", label: "Alle" },
-  { value: "alle2", label: "Alle" },
-  { value: "alle3", label: "Alle" },
+  { value: "Audi", label: "Audi" },
+  { value: "BMW", label: "BMW" },
 ];
 export const marke2 = [
   { value: "alle", label: "Alle" },
-  { value: "alle2", label: "Alle" },
-  { value: "alle3", label: "Alle" },
+  { value: "100", label: "100" },
+  { value: "200", label: "200" },
 ];
 export const karo = [
   { value: "alle", label: "Alle" },
@@ -14,14 +14,19 @@ export const karo = [
   { value: "alle3", label: "Alle" },
 ];
 export const van1 = [
-  { value: "Van", label: "Van" },
-  { value: "Van2", label: "Van" },
-  { value: "Van3", label: "Van" },
+  { value: "Von", label: "Von" },
+  { value: "Von2", label: "Von" },
+  { value: "Von3", label: "Von" },
 ];
 export const van2 = [
-  { value: "Van", label: "Van" },
-  { value: "Van2", label: "Van" },
-  { value: "Van3", label: "Van" },
+  { value: "Von", label: "Von" },
+  { value: "Von2", label: "Von" },
+  { value: "Von3", label: "Von" },
+];
+export const von4 = [
+  { value: "Von", label: "Von" },
+  { value: "Von2", label: "Von" },
+  { value: "Von3", label: "Von" },
 ];
 export const bis1 = [
   { value: "Bis", label: "Bis" },
@@ -29,6 +34,11 @@ export const bis1 = [
   { value: "Bis3", label: "Bis" },
 ];
 export const bis3 = [
+  { value: "Bis", label: "Bis" },
+  { value: "Bis2", label: "Bis" },
+  { value: "Bis3", label: "Bis" },
+];
+export const bis4 = [
   { value: "Bis", label: "Bis" },
   { value: "Bis2", label: "Bis" },
   { value: "Bis3", label: "Bis" },
@@ -51,9 +61,9 @@ export const kraft = [
 ];
 
 export const kilo = [
-  { value: "Van", label: "Van" },
-  { value: "Van2", label: "Van" },
-  { value: "Van3", label: "Van" },
+  { value: "Von", label: "Von" },
+  { value: "Von2", label: "Von" },
+  { value: "Von3", label: "Von" },
 ];
 export const kilo2 = [
   { value: "Bis", label: "Bis" },

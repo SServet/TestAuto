@@ -46,6 +46,10 @@ module.exports = {
         8: '8px',
         10: '10px',
         14: '14px',
+        100: '100px',
+      },
+      lineHeight: {
+        100: '122px'
       },
       borderColor: {
         "theme-gray": "#808080",
