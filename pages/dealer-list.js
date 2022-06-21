@@ -1,21 +1,19 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
-import Header from '../components/common/Header'
-import DealerListBreadcrumb from '../components/dealer/DealerListBreadcrumb';
-import DealerListContainer from '../components/dealer/DealerListContainer';
+import DealerListContainer from "../components/dealer/list/Container";
 
-export default function DealerList(){
+export default function Dealer(){
     return (
-        <div>
-          <Head>
-            <title>Auto Gigant - Dealer List</title>
-            <meta name="description" content="Auto Gigant" />
-            <link rel="icon" href="/favicon.ico" />
-          </Head>
-          <Header />
-          <DealerListBreadcrumb />
-          <DealerListContainer />
-          <Footer/>
-        </div>
-      );
+        <>
+      <Head>
+        <title>Auto Gigant</title>
+        <meta name="description" content="Auto Gigant" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Header />
+      <DealerListContainer />
+      <Footer />
+    </>
+    );
 }

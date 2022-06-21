@@ -7,8 +7,10 @@ module.exports = {
     extend: {
       colors: {
         "theme-black": "#333333",
+        "theme-black-2": "#555555",
         "theme-gray": "#9d9d9c",
         "theme-gray-2": "#666666",
+        "theme-gray-3": "#C3C3C3",
         "theme-yellow": "#f9b000",
         "theme-yellow-2": "#fbb900",
       },
@@ -16,6 +18,9 @@ module.exports = {
         "theme-gray": "#9d9d9c",
         "theme-gray-2": "#666666",
         "theme-gray-3": "#333333",
+        "theme-gray-4": "#F1F2F3",
+        "theme-gray-5": "#C3C3C3",
+        "theme-gray-6": "#555555",
         "theme-yellow": "#f9b000",
         "theme-yellow-2": "#fbb900",
         "user-input": "#f5f5f5",
@@ -36,7 +41,8 @@ module.exports = {
         49: "49%",
         55: "55%",
         '300': '300px',
-        224: '224px'
+        224: '224px',
+        250: '250px'
       },
       maxWidth: {
         'ag-container': '1140px'
@@ -44,7 +50,9 @@ module.exports = {
       fontSize: {
         15: '15px',
         8: '8px',
+        9: '9px',
         10: '10px',
+        13: '13px',
         14: '14px',
         100: '100px',
       },
@@ -53,6 +61,10 @@ module.exports = {
       },
       borderColor: {
         "theme-gray": "#808080",
+        "theme-gray-2": "#C3C3C3",
+        "theme-gray-3": "#555555",
+        "theme-gray-4": "#F1F2F3",
+        "theme-gray-5": "#707070",
         "theme-slate": "#cccccc",
         "footer-border": "#ffffffb3",
         "farbe-beige": "#CBA863",

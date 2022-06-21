@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import InputSelect from "../ui/InputSelect";
 import CheckBoxItem from "./CheckBoxItem";
+import ModelItem from "./ModelItem";
 import {
   marke1,
   marke2,
@@ -22,14 +23,32 @@ import {
   von2,
   getri,
   von4,
-  bis4
+  bis4,
 } from "./selectOptions";
 
 export default function DataLocation() {
   const [expanded, setExpanded] = useState(false);
-  const [brandName, setBrandName] = useState(null);
-  const [modelName, setModelName] = useState(null);
+  const [brandName, setBrandName] = useState("Marke");
+  const [modelName, setModelName] = useState("");
+  const [modelItems, setModelItems] = useState([]);
 
+
+  const addModel = () => {
+    setModelItems([
+      ...modelItems,
+      {
+        brandName: brandName,
+        modelName: modelName,
+        varient: ".B. Avantgarde, TDI, 320, usw",
+      },
+    ]);
+  };
+  
+  const deleteHandler = (id) => {
+    let newArr = modelItems;
+    newArr.splice(id, 1);
+    setModelItems([...newArr]);
+  }
 
   return (
     <div className="text-xs border-b-2">
@@ -46,13 +65,25 @@ export default function DataLocation() {
       <div
         className={`${expanded ? "h-auto pb-4" : "h-0"} overflow-hidden pt-4`}
       >
+         {modelItems
+          ? modelItems.map((item, i) => (
+              <ModelItem
+                key={i}
+                id={i}
+                brandName={item.brandName}
+                modelName={item.modelName}
+                varient={item.varient}
+                deleteHandler={() => deleteHandler(i)}
+              />
+            ))
+          : null}
         {/* Basisdaten & Standort */}
         <div className="flex items-end md:flex-col justify-between">
           <div className="w-300 md:w-full md:mb-4">
             <p className="mb-1 text-15">Marke</p>
             <InputSelect
               options={marke1}
-              placeholder={marke1[1].label}
+              placeholder={marke1[0].label}
               onChange={(e) => setBrandName(e.value)}
               regYear
             />
@@ -62,7 +93,7 @@ export default function DataLocation() {
             <p className="mb-1 text-15">Marke</p>
             <InputSelect
               options={marke2}
-              placeholder={marke1[1].label}
+              placeholder={marke1[0].label}
               onChange={(e) => setModelName(e.value)}
               regYear
             />
@@ -73,7 +104,7 @@ export default function DataLocation() {
               <p className="mb-1 text-15">Variante</p>
               <input
                 className="w-52 md:w-full md:mb-3 border rounded-md border-theme-slate px-4 py-3"
-                placeholder="z.B. Avantgarde, TDI, 320, usw. "
+                placeholder="z.B. Avantgarde, TDI, 320, usw."
                 type="text"
               />
             </div>
@@ -84,7 +115,11 @@ export default function DataLocation() {
           </div>
         </div>
         {/* Add more brands/models */}
-        <button className="text-black py-8 text-15 flex items-center">
+       
+        <button
+          onClick={addModel}
+          className="text-black py-8 text-15 flex items-center"
+        >
           <img
             className="w-6 opacity-80 mr-2"
             src="/images/icons/add-plus-icon.png"
@@ -244,7 +279,7 @@ export default function DataLocation() {
               <p className="mb-1 text-15">Sitzplätze</p>
               <InputSelect
                 options={von4}
-                placeholder={von4? von4[1].label : ''}
+                placeholder={von4 ? von4[1].label : ""}
                 regYear
                 classes="pr-4"
               />
