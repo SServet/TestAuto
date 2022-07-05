@@ -13,6 +13,7 @@ module.exports = {
         "theme-gray-3": "#C3C3C3",
         "theme-yellow": "#f9b000",
         "theme-yellow-2": "#fbb900",
+        "theme-blue": "#0067B8"
       },
       backgroundColor: {
         "theme-gray": "#9d9d9c",
@@ -21,8 +22,11 @@ module.exports = {
         "theme-gray-4": "#F1F2F3",
         "theme-gray-5": "#C3C3C3",
         "theme-gray-6": "#555555",
+        "theme-gray-7": "#F9F9F9",
         "theme-yellow": "#f9b000",
         "theme-yellow-2": "#fbb900",
+        "theme-yellow-3": "#FFD765",
+        "theme-green": "#00CE00",
         "user-input": "#f5f5f5",
         "farbe-beige": "#CBA863",
         "farbe-blue": "#285EC9",
@@ -42,7 +46,8 @@ module.exports = {
         55: "55%",
         '300': '300px',
         224: '224px',
-        250: '250px'
+        250: '250px',
+        280: '280px'
       },
       maxWidth: {
         'ag-container': '1140px'
@@ -54,6 +59,8 @@ module.exports = {
         10: '10px',
         13: '13px',
         14: '14px',
+        22: '22px',
+        40: '40px',
         100: '100px',
       },
       lineHeight: {
@@ -83,6 +90,10 @@ module.exports = {
       fill: {
         "theme-yellow": "#f9b000",
         "theme-yellow-2": "#fbb900",
+      },
+      opacity: {
+        15: '.15',
+        3: '.03'
       },
       screens: {
         sm: { max: "539px" },

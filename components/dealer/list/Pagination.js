@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-export default function Pagination() {
+export default function Pagination({ wFull }) {
   const [active, setActive] = useState(1);
   
 
   return (
-    <div className="w-9/12 md:!w-full max-w-ag-container ml-auto lg:w-full relative pt-6 bg-white pl-3 md:pl-0">
+    <div className={`${wFull ? 'w-full' : 'w-9/12'} md:!w-full max-w-ag-container ml-auto lg:w-full relative pt-6 bg-white pl-3 md:pl-0`}>
       <div className="flex md:flex-col md:!w-full justify-between items-center text-theme-black-2 border-t-2 pt-6 border-theme-gray-2">
       <p className="md:mb-2">12 VON 60 ERGEBNISSEN</p>
       <div className="flex items-center md:w-full justify-center md:justify-between md:pb-0">
