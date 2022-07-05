@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 export default function GigaCard({
   title,
   desc,
+  children,
   package1Title,
   package1Price,
   package2Title,
@@ -53,13 +54,19 @@ export default function GigaCard({
       >
         {title}
       </h3>
-      <p
-        className={`text-xs mb-2 ease-linear duration-200 ${
-          selectedPackage ? "text-white" : ""
-        }`}
-      >
-        {desc}
-      </p>
+      {desc && (
+        <p
+          className={`text-xs mb-2 ease-linear duration-200 ${
+            selectedPackage ? "text-white" : ""
+          }`}
+        >
+          {desc}
+        </p>
+      )}
+
+      {children && <div className={`text-xs mb-2 ease-linear duration-200 ${
+            selectedPackage ? "text-white" : ""
+          }`}>{children}</div>}
 
       <div>
         <button
@@ -72,7 +79,7 @@ export default function GigaCard({
         </button>
       </div>
       <button
-        className={`text-xs font-bold mt-8 text-theme-blue mb-10 ease-linear duration-200 ${
+        className={`text-xs font-bold mt-4 text-theme-blue mb-10 ease-linear duration-200 ${
           selectedPackage ? "text-theme-yellow-2" : ""
         }`}
       >
@@ -114,7 +121,7 @@ export default function GigaCard({
           {package2Title && (
             <button
               onClick={() => setSelectedPackage(2)}
-              className="w-full font-bold flex items-center justify-between py-1 px-4 ease-linear duration-200 hover:bg-theme-gray-6 hover:text-theme-yellow-2 bg-theme-yellow-3"
+              className="w-full font-bold flex items-center justify-between py-1 px-4 ease-linear duration-200 hover:bg-theme-gray-6 hover:text-theme-yellow-2"
             >
               <p>{package2Title}</p>
               <p>{package2Price} €</p>
@@ -132,7 +139,7 @@ export default function GigaCard({
           {package4Title && (
             <button
               onClick={() => setSelectedPackage(4)}
-              className="w-full font-bold flex items-center justify-between py-1 px-4 ease-linear duration-200 hover:bg-theme-gray-6 hover:text-theme-yellow-2 bg-theme-yellow-3"
+              className="w-full font-bold flex items-center justify-between py-1 px-4 ease-linear duration-200 hover:bg-theme-gray-6 hover:text-theme-yellow-2"
             >
               <p>{package4Title}</p>
               <p>{package4Price} €</p>

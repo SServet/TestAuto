@@ -62,10 +62,10 @@ export default function Sidebar() {
       )}
       {!expandSidebar && (
         <button
-          className="lg:fixed top-1/2 lg:-mt-10 left-0 hidden lg:block z-20 bg-theme-yellow-2 px-2 p-4 rounded-tr-md rounded-br-md"
+          className="lg:fixed top-1/2 lg:-mt-10 left-0 hidden lg:block z-20"
           onClick={() => setExpandSidebar(!expandSidebar)}
         >
-          <img src="/images/icons/mobile-menu-dashboard.png" />
+          <img src="/images/icons/mobile-hamburger.png" />
         </button>
       )}
       <div className="lg:fixed z-50 lg:h-screen lg:overflow-y-scroll lg:bg-theme-gray-4">
