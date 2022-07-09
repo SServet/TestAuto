@@ -4,7 +4,7 @@ export default function ProfileCard({ userThumb, userFullName }) {
       <div className="relative w-10/12 md:p-0 lg:w-full max-w-ag-container md:!w-full mx-auto flex lg:flex-col items-center bg-user-input">
         <div className="flex w-full h-full items-center justify-between p-8 md:p-4 text-white bg-theme-gray-6">
           <div className="flex items-center justify-center mr-8 md:mr-4">
-            <img src={userThumb} />
+            <img className="shadow-md shadow-black border-4 border-theme-gray-4 rounded-full" src={userThumb} />
           </div>
           <div className="border-l border-white md:px-0 md:border-none px-6 border-opacity-50">
             <p className="text-base md:text-xs">Hallo,</p>
@@ -18,7 +18,7 @@ export default function ProfileCard({ userThumb, userFullName }) {
               informieren.
             </p>
             <button className="mt-4 px-4 py-2 font-bold rounded-md text-lg ease-linear duration-200 bg-theme-yellow-2 text-theme-black-2 hover:bg-theme-gray-5">
-            Verkauf verifizieren
+            VERIFIZIERUNG
             </button>
           </div>
           <div className="flex items-center justify-center ml-4 md:hidden">

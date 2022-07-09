@@ -61,9 +61,11 @@ module.exports = {
         14: '14px',
         22: '22px',
         40: '40px',
+        50: '50px',
         100: '100px',
       },
       lineHeight: {
+        50: '50px',
         100: '122px'
       },
       borderColor: {

@@ -44,7 +44,7 @@ export default function GigaCard({
   return (
     <div
       className={`md:w-full group relative flex-1 p-4 rounded-md overflow-hidden text-theme-black-2 ${
-        selectedPackage ? "bg-theme-gray-6" : "bg-white"
+        selectedPackage ? "bg-theme-gray-3" : "bg-white"
       } ease-linear duration-200 mt-4`}
     >
       <h3
@@ -64,9 +64,15 @@ export default function GigaCard({
         </p>
       )}
 
-      {children && <div className={`text-xs mb-2 ease-linear duration-200 ${
+      {children && (
+        <div
+          className={`text-xs mb-2 ease-linear duration-200 ${
             selectedPackage ? "text-white" : ""
-          }`}>{children}</div>}
+          }`}
+        >
+          {children}
+        </div>
+      )}
 
       <div>
         <button
@@ -112,7 +118,7 @@ export default function GigaCard({
           {package1Title && (
             <button
               onClick={() => setSelectedPackage(1)}
-              className="w-full font-bold flex items-center justify-between py-1 px-4 ease-linear duration-200 hover:bg-theme-gray-6 hover:text-theme-yellow-2 bg-theme-yellow-3"
+              className="w-full font-bold flex items-center justify-between py-1 px-4 ease-linear duration-200 hover:bg-theme-gray-3 hover:text-theme-yellow-2 bg-theme-yellow-3"
             >
               <p>{package1Title}</p>
               <p>{package1Price} €</p>
@@ -121,7 +127,7 @@ export default function GigaCard({
           {package2Title && (
             <button
               onClick={() => setSelectedPackage(2)}
-              className="w-full font-bold flex items-center justify-between py-1 px-4 ease-linear duration-200 hover:bg-theme-gray-6 hover:text-theme-yellow-2"
+              className="w-full font-bold flex items-center justify-between py-1 px-4 ease-linear duration-200 hover:bg-theme-gray-3 hover:text-theme-yellow-2"
             >
               <p>{package2Title}</p>
               <p>{package2Price} €</p>
@@ -130,7 +136,7 @@ export default function GigaCard({
           {package3Title && (
             <button
               onClick={() => setSelectedPackage(3)}
-              className="w-full font-bold flex items-center justify-between py-1 px-4 ease-linear duration-200 hover:bg-theme-gray-6 hover:text-theme-yellow-2 bg-theme-yellow-3"
+              className="w-full font-bold flex items-center justify-between py-1 px-4 ease-linear duration-200 hover:bg-theme-gray-3 hover:text-theme-yellow-2 bg-theme-yellow-3"
             >
               <p>{package3Title}</p>
               <p>{package3Price} €</p>
@@ -139,7 +145,7 @@ export default function GigaCard({
           {package4Title && (
             <button
               onClick={() => setSelectedPackage(4)}
-              className="w-full font-bold flex items-center justify-between py-1 px-4 ease-linear duration-200 hover:bg-theme-gray-6 hover:text-theme-yellow-2"
+              className="w-full font-bold flex items-center justify-between py-1 px-4 ease-linear duration-200 hover:bg-theme-gray-3 hover:text-theme-yellow-2"
             >
               <p>{package4Title}</p>
               <p>{package4Price} €</p>
@@ -153,11 +159,43 @@ export default function GigaCard({
             onClick={() => setAdsModal(false)}
             className="absolute z-10 top-0 left-0 h-full w-full bg-black bg-opacity-60"
           ></div>
-          <div className="lg:p-4">
-            <img
-              className="relative z-30"
-              src="/images/dealer-register-close.png"
-            />
+          <div className="relative z-30 bg-white rounded p-8 lg:m-4">
+            <img className="" src="/images/dealer-register-close.png" />
+            <button onClick={() => setAdsModal(false)} className="absolute top-2 right-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15.121"
+                height="15.121"
+                viewBox="0 0 15.121 15.121"
+              >
+                <g
+                  id="Group_574"
+                  data-name="Group 574"
+                  transform="translate(-1054.439 -663.439)"
+                >
+                  <line
+                    id="Line_243"
+                    data-name="Line 243"
+                    x2="13"
+                    y2="13"
+                    transform="translate(1055.5 664.5)"
+                    fill="none"
+                    stroke="#333"
+                    strokeWidth="3"
+                  />
+                  <line
+                    id="Line_244"
+                    data-name="Line 244"
+                    x1="13"
+                    y2="13"
+                    transform="translate(1055.5 664.5)"
+                    fill="none"
+                    stroke="#333"
+                    strokeWidth="3"
+                  />
+                </g>
+              </svg>
+            </button>
           </div>
         </div>
       ) : null}

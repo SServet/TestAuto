@@ -10,7 +10,7 @@ export default function Overview() {
   return (
     <>
       <OverviewSchedule />
-      <div className="rounded-bl-md rounded-br-md overflow-hidden shadow-md my-8">
+      <div className="w-full rounded-bl-md rounded-br-md overflow-hidden shadow-md my-8">
         <Chart />
         <div className="relative bg-theme-gray-5 md:text-10">
           <div className="w-full flex justify-center md:justify-start py-3">

@@ -44,10 +44,10 @@ export default function Giga() {
           </div>
           <div className="flex md:flex-col">
             <GigaCard
-              title="DRINGEND"
+              title="GIGA LABEL"
               desc="Lassen Sie das Fahrzeug in der Liste mit dem Label 
-          „DRINGEND“ erscheinen 
-          und in der Kategorie „DRINGEND“ sein."
+              „GIGA“ erscheinen 
+              und in der Kategorie „GIGA LABEL“ sein."
               adUrl="#"
               package1Title="1 Woche"
               package1Price="6,00"
@@ -74,7 +74,7 @@ export default function Giga() {
               desc="Der Titel der Anzeige wird fett geschrieben und findet auf 
           einem farbigen Hintergrund statt."
               adUrl="#"
-              package1Title="30 Tage"
+              package1Title="1-mal"
               package1Price="4,00"
             />
             <div className="w-4 md:hidden"></div>
@@ -152,6 +152,105 @@ export default function Giga() {
                 <p className="font-bold">- 9 FOTOS</p>
               </>
             </GigaCard>
+          </div>
+        </div>
+        <div className="mt-4 rounded-md bg-theme-yellow-2 p-4 text-theme-black text-15">
+          <div className="flex items-center justify-between">
+            <div>
+              <div className="flex items-center justify-between leading-8">
+                <p className="font-bold mr-10">STARTSEITE SCHAUFENSTER</p>
+                <div className="flex items-center text-left">
+                  <p>1 Woche</p>
+                  <p className="ml-4">25,00 €</p>
+                  <button className="ml-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14.414"
+                      height="14.414"
+                      viewBox="0 0 14.414 14.414"
+                    >
+                      <g
+                        id="Group_560"
+                        data-name="Group 560"
+                        transform="translate(-1054.793 -663.793)"
+                      >
+                        <line
+                          id="Line_243"
+                          data-name="Line 243"
+                          x2="13"
+                          y2="13"
+                          transform="translate(1055.5 664.5)"
+                          fill="none"
+                          stroke="#db0000"
+                          strokeWidth="2"
+                        />
+                        <line
+                          id="Line_244"
+                          data-name="Line 244"
+                          x1="13"
+                          y2="13"
+                          transform="translate(1055.5 664.5)"
+                          fill="none"
+                          stroke="#db0000"
+                          strokeWidth="2"
+                        />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <p className="font-bold mr-10">DATUMAKTUALISIERUNG</p>
+                <div className="flex items-center text-left">
+                  <p>1-mal</p>
+                  <p className="ml-4">3,00 €</p>
+                  <button className="ml-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14.414"
+                      height="14.414"
+                      viewBox="0 0 14.414 14.414"
+                    >
+                      <g
+                        id="Group_560"
+                        data-name="Group 560"
+                        transform="translate(-1054.793 -663.793)"
+                      >
+                        <line
+                          id="Line_243"
+                          data-name="Line 243"
+                          x2="13"
+                          y2="13"
+                          transform="translate(1055.5 664.5)"
+                          fill="none"
+                          stroke="#db0000"
+                          strokeWidth="2"
+                        />
+                        <line
+                          id="Line_244"
+                          data-name="Line 244"
+                          x1="13"
+                          y2="13"
+                          transform="translate(1055.5 664.5)"
+                          fill="none"
+                          stroke="#db0000"
+                          strokeWidth="2"
+                        />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="font-bold">
+                <p>GESAMT</p>
+                <p className="text-2xl">28,00 €</p>
+              </div>
+              <button className="rounded-md text-xl font-bold ml-8 bg-theme-gray-6 text-white px-10">
+                KAUFEN
+              </button>
+            </div>
           </div>
         </div>
       </div>

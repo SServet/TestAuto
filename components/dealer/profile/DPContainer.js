@@ -5,7 +5,7 @@ import Pagination from "../list/Pagination";
 export default function DPContainer() {
   return (
     <div className="bg-theme-gray-3 lg:px-6 md:!px-0">
-      <div className="w-10/12 lg:w-full max-w-ag-container mx-auto flex md:flex-col-reverse shadow-md">
+      <div className="w-10/12 lg:w-full max-w-ag-container mx-auto flex md:flex-col-reverse shadow-1">
         <div className="w-full p-6 bg-white">
           <div>
             <img
@@ -88,21 +88,6 @@ export default function DPContainer() {
                         <option value="4">4</option>
                       </select>
                     </div>
-                    <button className="ml-12">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24.7"
-                        height="14.8"
-                        viewBox="0 0 24.7 14.8"
-                      >
-                        <path
-                          id="chevron_right_FILL0_wght500_GRAD0_opsz48"
-                          d="M18.75,36.3,16.3,33.85l9.9-9.9-9.9-9.9,2.45-2.45L31.1,23.95Z"
-                          transform="translate(36.3 -16.3) rotate(90)"
-                          fill="#555"
-                        />
-                      </svg>
-                    </button>
                   </div>
                 </div>
                 <div className="mt-4">

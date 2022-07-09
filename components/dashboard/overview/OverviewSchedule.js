@@ -42,8 +42,8 @@ export default function OverviewSchedule() {
           </button>
         </div>
         <div className="flex flex-col lg:w-full">
-          <div className="flex justify-between md:flex-col mb-6 lg:mb-4 lg:w-ful">
-            <div className="w-64 flex lg:w-72 md:!w-full md:mb-4 mr-6 lg:mr-0 p-4 rounded-md text-theme-black-2 bg-theme-gray-4">
+          <div className="flex justify-between lg:hidden md:!flex-col lg:!flex-row xl:flex-col mb-6 lg:mb-4 lg:w-ful">
+            <div className="w-64 flex lg:w-72 md:!w-full xl:mb-4 mr-6 lg:mr-0 p-4 rounded-md text-theme-black-2 bg-theme-gray-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
@@ -152,7 +152,7 @@ export default function OverviewSchedule() {
               </div>
             </div>
           </div>
-          <div className="flex lg:justify-between md:flex-col">
+          <div className="flex lg:justify-between md:flex-col xl:hidden lg:!flex">
             <div className="w-64 lg:w-72 md:!w-full md:mb-4 flex lg:mr-0 mr-6 p-4 rounded-md text-theme-black-2 bg-theme-gray-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -278,8 +278,130 @@ export default function OverviewSchedule() {
           </div>
         </div>
       </div>
-      <div className="mt-6 lg:mt-4 flex lg:flex-wrap lg:justify-between">
-        <div className="w-64 lg:w-72 md:!w-full flex mr-6 lg:mr-0 after:mr-6 p-4 rounded-md text-theme-black-2 bg-theme-gray-4">
+      <div className="mt-6 lg:mt-4 flex xl:flex-wrap lg:justify-between">
+        <div className="w-64 lg:w-72 md:!w-full md:mb-4 lg:!hidden xl:flex lg:mr-0 mr-6 p-4 rounded-md text-theme-black-2 bg-theme-gray-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+          >
+            <g
+              id="Group_489"
+              data-name="Group 489"
+              transform="translate(-998 -543)"
+            >
+              <rect
+                id="Rectangle_1112"
+                data-name="Rectangle 1112"
+                width="60"
+                height="60"
+                rx="5"
+                transform="translate(998 543)"
+                fill="#c3c3c3"
+              />
+              <path
+                id="visibility_FILL0_wght400_GRAD0_opsz48"
+                d="M22,29.364a7.682,7.682,0,0,0,7.727-7.727A7.682,7.682,0,0,0,22,13.909a7.682,7.682,0,0,0-7.727,7.727A7.682,7.682,0,0,0,22,29.364Zm0-2.636a5.044,5.044,0,0,1-5.091-5.091A5.044,5.044,0,0,1,22,16.545a5.044,5.044,0,0,1,5.091,5.091A5.044,5.044,0,0,1,22,26.727Zm0,8.545A20.372,20.372,0,0,1,10,31.5a22.984,22.984,0,0,1-8-9.864,22.984,22.984,0,0,1,8-9.864A20.372,20.372,0,0,1,22,8a20.372,20.372,0,0,1,12,3.773,22.984,22.984,0,0,1,8,9.864A22.984,22.984,0,0,1,34,31.5,20.372,20.372,0,0,1,22,35.273Zm0-13.636Zm0,10.909a18.279,18.279,0,0,0,10.114-2.977,19.32,19.32,0,0,0,7.023-7.932A19.32,19.32,0,0,0,32.114,13.7,18.279,18.279,0,0,0,22,10.727,18.279,18.279,0,0,0,11.886,13.7a19.645,19.645,0,0,0-7.068,7.932,19.645,19.645,0,0,0,7.068,7.932A18.279,18.279,0,0,0,22,32.545Z"
+                transform="translate(1006 551)"
+                fill="#f1f2f3"
+              />
+            </g>
+          </svg>
+          <span className="w-px rounded mx-4 bg-theme-gray-5"></span>
+          <div className="flex flex-col justify-between items-center">
+            <p className="text-xs font-bold">Gesamtaufrufe</p>
+            <h4 className="text-xl">3572</h4>
+          </div>
+        </div>
+        <div className="w-64 lg:w-72 md:!w-full hidden lg:!hidden xl:flex p-4 rounded-md mr-6 text-theme-black-2 bg-theme-gray-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+          >
+            <g
+              id="Group_490"
+              data-name="Group 490"
+              transform="translate(-1274 -543)"
+            >
+              <rect
+                id="Rectangle_1115"
+                data-name="Rectangle 1115"
+                width="60"
+                height="60"
+                rx="5"
+                transform="translate(1274 543)"
+                fill="#c3c3c3"
+              />
+              <path
+                id="list_FILL0_wght400_GRAD0_opsz48"
+                d="M20.167,17.265V14H50.093v3.265Zm0,9.25V23.25H50.093v3.265Zm0,9.25V32.5H50.093v3.265Z"
+                transform="translate(1274.562 548.117)"
+                fill="#f1f2f3"
+              />
+              <g
+                id="Ellipse_78"
+                data-name="Ellipse 78"
+                transform="translate(1284 579)"
+                fill="#00ce00"
+                stroke="#f1f2f3"
+                strokeWidth="1"
+              >
+                <circle cx="3" cy="3" r="3" stroke="none" />
+                <circle cx="3" cy="3" r="2.5" fill="none" />
+              </g>
+              <g
+                id="Ellipse_77"
+                data-name="Ellipse 77"
+                transform="translate(1284 570)"
+                fill="#00ce00"
+                stroke="#f1f2f3"
+                strokeWidth="1"
+              >
+                <circle cx="3" cy="3" r="3" stroke="none" />
+                <circle cx="3" cy="3" r="2.5" fill="none" />
+              </g>
+              <g
+                id="Ellipse_76"
+                data-name="Ellipse 76"
+                transform="translate(1284 561)"
+                fill="#00ce00"
+                stroke="#f1f2f3"
+                strokeWidth="1"
+              >
+                <circle cx="3" cy="3" r="3" stroke="none" />
+                <circle cx="3" cy="3" r="2.5" fill="none" />
+              </g>
+            </g>
+          </svg>
+          <span className="w-px rounded mx-4 bg-theme-gray-5"></span>
+          <div className="flex flex-col justify-between items-center">
+            <p className="text-xs font-bold">Inserate online</p>
+            <h4 className="text-xl font-bold">1234</h4>
+            <Link href="#">
+              <a className="flex items-center text-10 font-bold text-theme-blue">
+                <p className="mr-2">INSERAT AUFGEBEN</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                >
+                  <path
+                    id="Icon_awesome-arrow-circle-right"
+                    data-name="Icon awesome-arrow-circle-right"
+                    d="M8.063.563a7.5,7.5,0,1,1-7.5,7.5A7.5,7.5,0,0,1,8.063.563ZM7.189,4.905l2.283,2.19H3.95a.724.724,0,0,0-.726.726V8.3a.724.724,0,0,0,.726.726H9.472L7.189,11.22a.727.727,0,0,0-.012,1.037l.333.33a.723.723,0,0,0,1.025,0l4.013-4.01a.723.723,0,0,0,0-1.025L8.534,3.535a.723.723,0,0,0-1.025,0l-.333.33A.73.73,0,0,0,7.189,4.905Z"
+                    transform="translate(-0.563 -0.563)"
+                    fill="#0067b8"
+                  />
+                </svg>
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div className="w-64 lg:w-72 md:!w-full flex mr-6 lg:mr-0 after:mr-6 xl:mt-6 p-4 rounded-md text-theme-black-2 bg-theme-gray-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -314,7 +436,7 @@ export default function OverviewSchedule() {
             <h4 className="text-xl">123</h4>
           </div>
         </div>
-        <div className="w-64 lg:w-72 md:!w-full flex mr-6 lg:mr-0 md:mt-4 after:mr-6 p-4 rounded-md text-theme-black-2 bg-theme-gray-4">
+        <div className="w-64 lg:w-72 md:!w-full flex mr-6 lg:mr-0 md:mt-4 xl:mt-6 after:mr-6 p-4 rounded-md text-theme-black-2 bg-theme-gray-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -350,7 +472,7 @@ export default function OverviewSchedule() {
             <h4 className="text-xl">3250</h4>
           </div>
         </div>
-        <div className="w-64 lg:w-72 md:!w-full flex p-4 lg:mt-4 rounded-md text-theme-black-2 bg-theme-gray-4">
+        <div className="w-64 lg:w-72 md:!w-full flex p-4 lg:mt-4 xl:mt-6 rounded-md text-theme-black-2 bg-theme-gray-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"

@@ -8,19 +8,20 @@ export default function DashboardCard({ adNo, start, end, title, price, imgSrc }
         <p>BEGINN: {start}</p>
         <p>ENDET: {end}</p>
       </div>
-      <div className="flex rounded-md overflow-hidden md:flex-col border-l-8 border-theme-yellow-2 md:bg-white md:rounded-md">
-        <div className="flex flex-col md:flex-row md:w-full md:h-auto justify-between bg-theme-gray-6">
+      <div className="flex rounded-md overflow-hidden md:flex-col border-l-8 md:border-l-0 border-t-4 border-theme-yellow-2 md:bg-white md:rounded-md">
+        <div className="flex flex-col md:flex-row md:w-full md:h-auto justify-between bg-theme-gray-6" title='Detailansicht'>
           <button className="h-1/3 md:w-1/3 flex items-center justify-center p-1 pt-4">
             <img src="/images/icons/ads-card-eye.svg" />
           </button>
-          <button className="h-1/3 md:w-1/3 flex items-center justify-center p-1 pt-3 md:border-none border-y border-theme-gray-2">
+          <button className="h-1/3 md:w-1/3 flex items-center justify-center p-1 pt-3 md:border-none border-y border-theme-gray-2" title="AFavoriten hinzufügen">
             <img src="/images/icons/ads-card-fav.svg" />
           </button>
-          <button className="h-1/3 md:w-1/3 flex items-center justify-center p-1 pt-3">
+          <button className="h-1/3 md:w-1/3 flex items-center justify-center p-1 pt-3" title='Teilen'>
             <img src="/images/icons/ads-card-share.svg" />
           </button>
         </div>
         <div className="flex relative text-white font-bold text-xs">
+          <img className="w-full" src={imgSrc} />
           <div className="absolute flex w-full justify-around items-center top-6 px-8">
             <div className="flex items-center">
               <img src="/images/icons/db-card-eye.png" />
@@ -35,18 +36,17 @@ export default function DashboardCard({ adNo, start, end, title, price, imgSrc }
               <p className="ml-2">25</p>
             </div>
           </div>
-          <img className="w-full" src={imgSrc} />
         </div>
-        <div className="flex-1 pt-4 border-b-8 border-theme-yellow-2 text-theme-black bg-white">
+        <div className="flex-1 xl:flex-auto pt-4 border-b-8 border-theme-yellow-2 text-theme-black bg-white">
           <div className="px-4 flex items-center justify-between font-bold text-theme-blue">
-            <h3 className="text-lg">{title}</h3>
-            <h3 className="text-2xl">{price} €</h3>
+            <h3 className="text-lg xl:text-sm">{title}</h3>
+            <h3 className="text-2xl xl:text-base">{price} €</h3>
           </div>
-          <div className="px-4 textsm my-3">
+          <div className="px-4 text-sm my-3 xl:text-xs">
             <p>4.2 FSI quattro * ABT KOMPRESSOR</p>
             <p>20{`"`} MB DESIGN Felgen</p>
           </div>
-          <div className="flex flex-wrap text-13 py-1 px-4 pr-20 leading-5 bg-theme-gray-7">
+          <div className="flex flex-wrap text-13 py-1 px-4 pr-20 leading-5 bg-theme-gray-7 xl:pr-0">
             <p className="mr-4">2020</p>
             <p className="mr-4">Benzin</p>
             <p className="mr-4">125 PS</p>
@@ -55,7 +55,7 @@ export default function DashboardCard({ adNo, start, end, title, price, imgSrc }
             <p className="mr-4">Gebraucht</p>
             <p className="mr-4">Händler</p>
           </div>
-          <div className="flex justify-between text-xs px-4 py-2 bg-theme-gray-3 text-white">
+          <div className="flex xl:flex-col justify-between text-xs px-4 py-2 bg-theme-gray-3 text-white">
             <div className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
