@@ -42,7 +42,7 @@ export default function OverviewSchedule() {
           </button>
         </div>
         <div className="flex flex-col lg:w-full">
-          <div className="flex justify-between lg:hidden md:!flex-col lg:!flex-row xl:flex-col mb-6 lg:mb-4 lg:w-ful">
+          <div className="flex justify-between lg:flex-row xl:flex-col md:!flex-col mb-6 lg:mb-4 lg:w-ful">
             <div className="w-64 flex lg:w-72 md:!w-full xl:mb-4 mr-6 lg:mr-0 p-4 rounded-md text-theme-black-2 bg-theme-gray-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -279,7 +279,7 @@ export default function OverviewSchedule() {
         </div>
       </div>
       <div className="mt-6 lg:mt-4 flex xl:flex-wrap lg:justify-between">
-        <div className="w-64 lg:w-72 md:!w-full md:mb-4 lg:!hidden xl:flex lg:mr-0 mr-6 p-4 rounded-md text-theme-black-2 bg-theme-gray-4">
+        {/* <div className="w-64 lg:w-72 md:!w-full md:mb-4 hidden xl:flex lg:mr-0 mr-6 p-4 rounded-md text-theme-black-2 bg-theme-gray-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -314,7 +314,7 @@ export default function OverviewSchedule() {
             <h4 className="text-xl">3572</h4>
           </div>
         </div>
-        <div className="w-64 lg:w-72 md:!w-full hidden lg:!hidden xl:flex p-4 rounded-md mr-6 text-theme-black-2 bg-theme-gray-4">
+        <div className="w-64 lg:w-72 md:!w-full hidden xl:flex p-4 rounded-md mr-6 text-theme-black-2 bg-theme-gray-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -400,7 +400,7 @@ export default function OverviewSchedule() {
               </a>
             </Link>
           </div>
-        </div>
+        </div> */}
         <div className="w-64 lg:w-72 md:!w-full flex mr-6 lg:mr-0 after:mr-6 xl:mt-6 p-4 rounded-md text-theme-black-2 bg-theme-gray-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"

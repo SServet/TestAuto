@@ -51,7 +51,7 @@ export default function Overview() {
             className="absolute z-10 top-0 left-0 h-full w-full bg-black bg-opacity-60"
           ></div>
           <div className="relative z-40 w-2/3 lg:w-full bg-white">
-           <Chart />
+           {/* <Chart /> */}
           </div>
         </div>
       ) : null}
