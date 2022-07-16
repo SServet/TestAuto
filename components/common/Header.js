@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-black shadow-1 relative z-10 lg:px-6">
+    <header className="bg-black shadow-1 relative z-40 lg:px-6">
       <div className="max-w-ag-container w-10/12 lg:w-full mx-auto flex justify-between items-end py-6 md:py-4 md:pb-2 md:items-start">
         <Link href="/">
           <img
@@ -27,7 +27,7 @@ export default function Header() {
             <button className="w-full md:w-6 inline-flex justify-end">
               <img src="/images/icons/header-user.png" />
             </button>
-            <div className="w-full md:!w-40 md:text-10 absolute z-10 uppercase invisible opacity-0 py-10 md:py-6 group-hover:visible group-hover:opacity-100 flex flex-col top-full overflow-hidden font-medium -mt-2 right-0 text-white rounded-md bg-theme-gray-2 ease-linear duration-150">
+            <div className="w-full md:!w-40 md:text-10 absolute z-50 uppercase invisible opacity-0 py-10 md:py-6 group-hover:visible group-hover:opacity-100 flex flex-col top-full overflow-hidden font-medium -mt-2 right-0 text-white rounded-md bg-theme-gray-2 ease-linear duration-150">
               <Link href="/login">
                 <a className="px-4 md:px-1 ease-in duration-300 hover:bg-theme-yellow hover:fill-black hover:text-black fill-white inline-flex items-center">
                   <svg

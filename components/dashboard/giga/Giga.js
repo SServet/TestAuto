@@ -154,11 +154,11 @@ export default function Giga() {
             </GigaCard>
           </div>
         </div>
-        <div className="mt-4 rounded-md bg-theme-yellow-2 p-4 text-theme-black text-15">
-          <div className="flex items-center justify-between">
-            <div>
+        <div className="mt-4 rounded-md bg-theme-yellow-2 p-4 text-theme-black text-15 2xl:text-xs">
+          <div className="flex items-center justify-between lg:flex-col">
+            <div className="lg:w-full">
               <div className="flex items-center justify-between leading-8">
-                <p className="font-bold mr-10">STARTSEITE SCHAUFENSTER</p>
+                <p className="font-bold mr-10 2xl:mr-4">STARTSEITE SCHAUFENSTER</p>
                 <div className="flex items-center text-left">
                   <p>1 Woche</p>
                   <p className="ml-4">25,00 €</p>
@@ -200,7 +200,7 @@ export default function Giga() {
                 </div>
               </div>
               <div className="flex items-center justify-between">
-                <p className="font-bold mr-10">DATUMAKTUALISIERUNG</p>
+                <p className="font-bold mr-10 2xl:mr-4">DATUMAKTUALISIERUNG</p>
                 <div className="flex items-center text-left">
                   <p>1-mal</p>
                   <p className="ml-4">3,00 €</p>
@@ -242,12 +242,12 @@ export default function Giga() {
                 </div>
               </div>
             </div>
-            <div className="flex">
+            <div className="flex lg:mt-6 2xl:items-center">
               <div className="font-bold">
-                <p>GESAMT</p>
-                <p className="text-2xl">28,00 €</p>
+                <p className="2xl:text-xs">GESAMT</p>
+                <p className="text-2xl 2xl:text-lg">28,00 €</p>
               </div>
-              <button className="rounded-md text-xl font-bold ml-8 bg-theme-gray-6 text-white px-10">
+              <button className="rounded-md text-xl 2xl:text-sm font-bold ml-8 2xl:ml-4 bg-theme-gray-6 text-white px-10 2xl:px-6 2xl:py-4">
                 KAUFEN
               </button>
             </div>

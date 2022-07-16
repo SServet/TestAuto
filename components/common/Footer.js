@@ -53,7 +53,7 @@ export default function Footer() {
           <FooterLinks title="GIGANT WORLD" links={links5} />
         </div>
         <div className="flex justify-between md:flex-col lg:justify-around items-center xl:items-center px-6 py-4 md:py-8 bg-black">
-          <div className="flex w-1/2 lg:w-auto md:mr-auto items-end lg:flex-col xl:items-center lg:items-start">
+          <div className="flex w-1/2 lg:w-auto md:mr-auto items-end lg:flex-col lg:items-start">
             <Link href="/">
               <div className="md:w-full">
                 <img
