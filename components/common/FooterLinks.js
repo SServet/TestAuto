@@ -10,10 +10,10 @@ export default function FooterLinks({ title, links }) {
   }, []);
 
   return (
-    <div className="text-13 text-theme-black-2 md:py-3">
+    <div className="text-13 text-theme-black-2 md:py-2">
       <div
         className={`md:flex justify-between items-center md:border-b border-theme-gray-2 ${
-          active ? "" : "pb-2"
+          active ? "" : "pb-3"
         }`}
       >
         <button

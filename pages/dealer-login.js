@@ -1,18 +1,18 @@
 import Head from 'next/head';
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
-import ResetPassword from '../components/ResetPassword';
+import DealerLogin from '../components/DealerLogin';
 
-export default function Reset() {
+export default function DealerLoginPage() {
   return (
     <div>
       <Head>
-        <title>Auto Gigant - Reset Password</title>
+        <title>Auto Gigant - Dealer Log in</title>
         <meta name="description" content="Auto Gigant" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ResetPassword />
+      <DealerLogin />
       <Footer />
     </div>
   )
