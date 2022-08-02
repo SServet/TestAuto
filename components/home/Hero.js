@@ -1,4 +1,5 @@
 import InputSelect from "../ui/InputSelect";
+import Link from "next/link";
 
 export default function Hero() {
   const option1 = [
@@ -75,7 +76,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="flex md:flex-wrap items-center mt-6 lg:mt-2 mb-2 pl-2 justify-between text-xl lg:text-sm text-15">
-              <button className="w-1/4 md:w-1/2 lg:w-auto text-left text-white underline">Erweiterte Suche</button>
+              <Link href="/search-details"><button className="w-1/4 md:w-1/2 lg:w-auto text-left text-white underline">Erweiterte Suche</button></Link>
               <button className="w-1/4 md:w-1/2 lg:w-auto pl-4 text-center text-white underline">Filter zurücksetzen</button>
               <div className="w-4 2xl:w-0"></div>
               <button className="w-1/2 md:!w-8/12 md:mx-auto md:mt-3 lg:w-auto 2xl:w-1/3  text-center py-1 lg:py-2 border-black border-2 rounded-lg font-bold text-black bg-theme-yellow">Suchen</button>
