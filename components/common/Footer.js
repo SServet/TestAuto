@@ -3,8 +3,8 @@ import FooterLinks from "./FooterLinks";
 
 export default function Footer() {
   const links1 = [
-    { linkTitle: "ANMELDEN", url: "login" },
-    { linkTitle: "REGISTRIEREN", url: "registration/dealer" },
+    { linkTitle: "ANMELDEN", url: "#" },
+    { linkTitle: "REGISTRIEREN", url: "#" },
     { linkTitle: "VORTEILE", url: "#" },
     { linkTitle: "PREISE", url: "#" },
     { linkTitle: "HILFE", url: "#" },

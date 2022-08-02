@@ -41,7 +41,7 @@ export default function Header() {
                   Login
                 </a>
               </Link>
-              <Link href="/registration/user">
+              <Link href="/">
                 <a className="px-4 md:px-1 ease-in duration-300 hover:bg-theme-yellow hover:fill-black hover:text-black fill-white inline-flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ export default function Header() {
                   Registrieren
                 </a>
               </Link>
-              <Link href="/dashboard">
+              <Link href="/">
                 <a className="px-4 md:px-1 ease-in duration-300 hover:bg-theme-yellow hover:fill-black hover:text-black fill-white inline-flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ export default function Header() {
                   Dashboard
                 </a>
               </Link>
-              <Link href="/dealer-list">
+              <Link href="/">
                 <a className="px-4 md:px-1 ease-in duration-300 hover:bg-theme-yellow hover:fill-black hover:text-black fill-white inline-flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ export default function Header() {
                   HANDLERLISTE
                 </a>
               </Link>
-              <Link href="/dashboard/make-ads">
+              <Link href="/">
                 <a className="px-4 md:px-1 ease-in duration-300 hover:bg-theme-yellow hover:fill-black hover:text-black fill-white inline-flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ export default function Header() {
                   Inserat Aufgeben
                 </a>
               </Link>
-              <Link href="/dashboard/my-ads">
+              <Link href="/">
                 <a className="px-4 md:px-1 ease-in duration-300 hover:bg-theme-yellow hover:fill-black hover:text-black fill-white inline-flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ export default function Header() {
                   Meine Inserate
                 </a>
               </Link>
-              <Link href="/logout-success">
+              <Link href="/">
                 <a className="px-4 md:px-1 ease-in duration-300 hover:bg-theme-yellow hover:fill-black hover:text-black fill-white inline-flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
